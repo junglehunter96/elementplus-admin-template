@@ -101,7 +101,7 @@ export default ({
         const store = useStore()
         const route = useRoute()
         const router = useRouter()
-        const removeTagNav = () => store.commit('layout/removeTagNav', { cPath: route.path, tagsList: v })
+        const removeTagNav = (v) => store.commit('layout/removeTagNav', { cPath: route.path, tagsList: v })
         const closeAll = () => store.commit('layout/removeAllTagNav')
         
         onMounted(() => {
