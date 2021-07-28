@@ -25,25 +25,16 @@ export const allowRouter = [
         ]
     },
     {
-        name: 'ErrorPage',
-        path: '/ErrorPage',
-        meta: { title: '错误页面', icon: 'el-icon-eleme' },
-        component: Components.Layout,
-        redirect: '/ErrorPage/404',
-        children: [
-            {
-                name: '401',
-                path: '/ErrorPage/401',
-                component: Components['401'],
-                meta: { title: '401', icon: 'el-icon-s-tools' }
-            },
-            {
-                name: '404',
-                path: '/ErrorPage/404',
-                component: Components['404'],
-                meta: { title: '404', icon: 'el-icon-s-tools' }
-            }
-        ]
+        name: '401',
+        path: '/ErrorPage/401',
+        component: Components['401'],
+        meta: { title: '401', icon: 'el-icon-s-tools',hidden: true }
+    },
+    {
+        name: '404',
+        path: '/ErrorPage/404',
+        component: Components['404'],
+        meta: { title: '404', icon: 'el-icon-s-tools',hidden: true }
     },
     {
         name: 'RedirectPage',

@@ -1,5 +1,5 @@
 import { createStore, useStore as baseUseStore } from 'vuex'
-import layout from '@/store/module/layout'
+import layout from '@/store/modules/layout'
 import { loadStorePage } from '@/utils/tools'
 const page = import.meta.globEager('./page/**/**.js')
 

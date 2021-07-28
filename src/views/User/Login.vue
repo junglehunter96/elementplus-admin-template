@@ -21,9 +21,6 @@
             <p class="leading-6 text-sm">
               <span class="w-24 inline-block">账号: dev</span> 密码: dev
             </p>
-            <p class="leading-6 text-sm">
-              <span class="w-24 inline-block">账号: test</span> 密码: test
-            </p>
           </div>
 
         </div>

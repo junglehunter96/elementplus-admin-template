@@ -14,7 +14,6 @@ export const role = [
 export const user_role = [
     { userName: 'admin', roleName: 'admin' },
     { userName: 'dev', roleName: 'dev' },
-    { userName: 'test', roleName: 'test' }
 ]
 
 export const permission = [
@@ -34,10 +33,6 @@ export const role_route = [
     { roleName: 'dev', id: 5, permission: [] },
     { roleName: 'dev', id: 50, permission: ['add'] },
 
-    { roleName: 'test', id: 1, permission: [] },
-    { roleName: 'test', id: 10, permission: [] },
-    { roleName: 'test', id: 5, permission: [] },
-    { roleName: 'test', id: 50, permission: ['update'] }
 ]
 
 export const route = [
@@ -91,31 +86,6 @@ export const route = [
         redirect: '/Nav/SecondNav/ThirdNav',
         component: 'SecondNav',
         meta: { title: '二级导航', icon: 'el-icon-camera', alwaysShow: true }
-    },
-    {
-        id: 300,
-        parentId: 30,
-        name: 'ThirdNav',
-        path: '/Nav/SecondNav/ThirdNav',
-        component: 'ThirdNav',
-        meta: { title: '三级导航', icon: 'el-icon-s-platform' }
-    },
-    {
-        id: 31,
-        parentId: 3,
-        name: 'SecondText',
-        path: '/Nav/SecondText',
-        redirect: '/Nav/SecondText/ThirdText',
-        component: 'SecondText',
-        meta: { title: '二级文本', icon: 'el-icon-s-opportunity', alwaysShow: true }
-    },
-    {
-        id: 310,
-        parentId: 31,
-        name: 'ThirdText',
-        path: '/Nav/SecondText/ThirdText',
-        component: 'ThirdText',
-        meta: { title: '三级文本', icon: 'el-icon-menu' }
     },
     {
         id: 4,

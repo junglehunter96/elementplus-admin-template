@@ -15,18 +15,19 @@
 
 <script>
 import Config from './typeConfig.js';
-
+import { useRouter } from 'vue-router';
 export default {
   name: 'ExceptionPage',
   props: ['type'],
-  setup(ctx) {
+  setup() {
+    const router = useRouter();
     function backHome() {
-      ctx.$router.push('/');
+      router.push('/');
     }
     return {
       config: Config,
       backHome: backHome,
-    }
+    };
   },
 };
 </script>
@@ -34,6 +35,8 @@ export default {
 <style lang="postcss" scoped>
 .exception-page {
   border-radius: 4px;
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

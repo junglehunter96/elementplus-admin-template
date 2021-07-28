@@ -63,7 +63,7 @@ export default  ({
             return route.path
         })
         const onOpenChange = (d) => {
-            console.log('testing')
+            
             router.push({ path: d })
             menubar.status === 2 && store.commit('layout/changeCollapsed')
         }
