@@ -68,12 +68,12 @@
 
 <script >
 import { reactive, ref } from 'vue'
-import TableSearch from '/@/components/TableSearch/index.vue'
-import CardList from '/@/components/CardList/CardList.vue'
-import CardListItem from '/@/components/CardList/CardListItem.vue'
-import { getTableList } from '/@/api/components/index'
-import { format, tableSummaries } from '/@/utils/tools'
-import { validate } from '/@/utils/formExtend'
+import TableSearch from '@/components/TableSearch/index.vue'
+import CardList from '@/components/CardList/CardList.vue'
+import CardListItem from '@/components/CardList/CardListItem.vue'
+import { getTableList } from '@/api/components/index'
+import { format, tableSummaries } from '@/utils/tools'
+import { validate } from '@/utils/formExtend'
 
 
 // 键值对样式，及表单校验

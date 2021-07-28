@@ -24,8 +24,8 @@
 </template>
 <script >
 
-import err404 from '/@/assets/img/404.png'
-import errCloud from '/@/assets/img/404_cloud.png'
+import err404 from '@/assets/img/404.png'
+import errCloud from '@/assets/img/404_cloud.png'
 
 export default ({
     name: '404',

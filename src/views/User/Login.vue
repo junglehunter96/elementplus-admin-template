@@ -34,9 +34,9 @@
 
 <script>
 import { reactive, ref } from 'vue';
-import { store } from '/@/store/index';
+import { store } from '@/store/index';
 import { ElNotification } from 'element-plus';
-import { validate } from '/@/utils/formExtend';
+import { validate } from '@/utils/formExtend';
 
 const formRender = () => {
   let form = reactive({

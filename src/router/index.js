@@ -1,10 +1,10 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import { components } from '/@/router/asyncRouter'
+import { components } from '@/router/asyncRouter'
 
 const Components= Object.assign({}, components, {
-    Layout: () => import('/@/layout/index.vue'),
-    Redirect: (() => import('/@/layout/redirect.vue')),
-    LayoutBlank: (() => import('/@/layout/blank.vue'))
+    Layout: () => import('@/layout/index.vue'),
+    Redirect: (() => import('@/layout/redirect.vue')),
+    LayoutBlank: (() => import('@/layout/blank.vue'))
 })
 
 // 静态路由页面

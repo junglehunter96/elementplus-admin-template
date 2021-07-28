@@ -40,8 +40,8 @@
 
 <script >
 import { ref } from 'vue'
-import { useStore } from '/@/store/index'
-import { checkPermission } from '/@/utils/permission'
+import { useStore } from '@/store/index'
+import { checkPermission } from '@/utils/permission'
 export default ({
     name: 'Directive',
     setup() {

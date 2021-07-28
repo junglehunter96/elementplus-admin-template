@@ -32,7 +32,7 @@
 
 <script >
 import {  ref } from 'vue'
-import { slide } from '/@/utils/animate'
+import { slide } from '@/utils/animate'
 export default ({
     name: 'TableSearch',
     props: {

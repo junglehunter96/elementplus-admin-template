@@ -1,7 +1,7 @@
-import { store } from '/@/store/index'
+import { store } from '@/store/index'
 import { ref } from 'vue'
 import { version } from 'element-plus'
-import { useStore } from '/@/store/index'
+import { useStore } from '@/store/index'
 const getTheme = (theme, prevTheme) => {
     const themeCluster = getThemeCluster(theme.substr(1))
     const originalCluster = getThemeCluster(prevTheme.value.substr(1))

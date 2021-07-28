@@ -61,9 +61,9 @@
 </template>
 
 <script >
-import { useStore } from '/@/store/index'
-import Chart from '/@/views/Dashboard/Workplace/_Components/Chart.vue'
-import List from '/@/views/Dashboard/Workplace/_Components/List.vue'
+import { useStore } from '@/store/index'
+import Chart from '@/views/Dashboard/Workplace/_Components/Chart.vue'
+import List from '@/views/Dashboard/Workplace/_Components/List.vue'
 
 export default ({
     name: 'Workplace',

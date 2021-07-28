@@ -18,7 +18,7 @@
 </template>
 <script >
 import {   ref, watch } from 'vue'
-import { useStore } from '/@/store/index'
+import { useStore } from '@/store/index'
 import { useRouter } from 'vue-router'
 import Fuse from 'fuse.js'
 

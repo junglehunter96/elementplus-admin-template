@@ -20,8 +20,8 @@
 
 <script >
 import { computed } from 'vue'
-import MenubarItem from '/@/layout/components/menubarItem.vue'
-import { useStore } from '/@/store/index'
+import MenubarItem from '@/layout/components/menubarItem.vue'
+import { useStore } from '@/store/index'
 import { useRoute, useRouter } from 'vue-router'
 
 // 过滤隐藏的菜单，并提取单条的子菜单

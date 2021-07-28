@@ -39,13 +39,13 @@
 
 <script >
 import { onMounted } from 'vue'
-import LayoutContent from '/@/layout/components/content.vue'
-import LayoutMenubar from '/@/layout/components/menubar.vue'
-import LayoutNavbar from '/@/layout/components/navbar.vue'
-import LayoutTags from '/@/layout/components/tags.vue'
-import LayoutSideSetting from '/@/layout/components/sideSetting.vue'
-import { useStore } from '/@/store/index'
-import { throttle } from '/@/utils/tools'
+import LayoutContent from '@/layout/components/content.vue'
+import LayoutMenubar from '@/layout/components/menubar.vue'
+import LayoutNavbar from '@/layout/components/navbar.vue'
+import LayoutTags from '@/layout/components/tags.vue'
+import LayoutSideSetting from '@/layout/components/sideSetting.vue'
+import { useStore } from '@/store/index'
+import { throttle } from '@/utils/tools'
 
 export default  ({
     name: 'Layout',

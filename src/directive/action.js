@@ -1,5 +1,5 @@
 
-import { checkPermission } from '/@/utils/permission'
+import { checkPermission } from '@/utils/permission'
 
 const actionPermission = (el, binding) => {
     const value = typeof binding.value === 'string' ? [binding.value] : binding.value

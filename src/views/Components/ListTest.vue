@@ -17,7 +17,7 @@
 </template>
 
 <script >
-import List from '/@/components/List/index.vue'
+import List from '@/components/List/index.vue'
 
 export default ({
     name: 'ListTest',

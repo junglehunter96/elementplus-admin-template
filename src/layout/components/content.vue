@@ -16,7 +16,7 @@
 <script >
 import { computed, reactive, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import { useStore } from '/@/store/index'
+import { useStore } from '@/store/index'
 
 export default  ({
     name: 'LayoutContent',

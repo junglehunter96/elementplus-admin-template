@@ -19,7 +19,7 @@
 </template>
 <script>
 import { onMounted, ref } from 'vue';
-import { echarts } from '/@/components/Echart';
+import { echarts } from '@/components/Echart';
 
 // 雷达图
 const chartRadar = () => {

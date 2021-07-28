@@ -22,7 +22,7 @@
     </el-card>
 </template>
 <script>
-import List from '/@/components/List/index.vue'
+import List from '@/components/List/index.vue'
 
 // list初始化
 const listRender = () => {

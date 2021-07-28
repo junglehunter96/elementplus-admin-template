@@ -14,7 +14,7 @@
 
 <script >
 import { ref } from 'vue'
-import OpenWindow from '/@/components/OpenWindow/index.vue'
+import OpenWindow from '@/components/OpenWindow/index.vue'
 export default ({
     name: 'OpenWindowTest',
     components: {

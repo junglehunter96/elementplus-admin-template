@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import errGif from '/@/assets/img/401.gif'
+import errGif from '@/assets/img/401.gif'
 export default ({
     name: '401',
     setup() {

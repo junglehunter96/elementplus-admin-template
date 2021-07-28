@@ -40,11 +40,11 @@
 
 <script >
 import {  reactive, watch } from 'vue'
-import { useStore } from '/@/store/index'
+import { useStore } from '@/store/index'
 import { useRoute } from 'vue-router'
-import Notice from '/@/layout/components/notice.vue'
-import Screenfull from '/@/layout/components/screenfull.vue'
-import Search from '/@/layout/components/search.vue'
+import Notice from '@/layout/components/notice.vue'
+import Screenfull from '@/layout/components/screenfull.vue'
+import Search from '@/layout/components/search.vue'
 
 // 面包屑导航
 const breadcrumb = (route) => {

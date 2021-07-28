@@ -1,9 +1,9 @@
-import { listToTree } from '/@/utils/tools'
-import { store } from '/@/store/index'
+import { listToTree } from '@/utils/tools'
+import { store } from '@/store/index'
 // 动态路由名称映射表
 const modules = import.meta.glob('../views/**/**.vue')
 const components = {
-    Layout: (() => import('/@/layout/index.vue'))
+    Layout: (() => import('@/layout/index.vue'))
 }
 Object.keys(modules).forEach(key => {
     const nameMatch = key.match(/^\.\.\/views\/(.+)\.vue/)

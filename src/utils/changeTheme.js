@@ -1,5 +1,5 @@
-import theme from '/@/config/theme'
-import { store } from '/@/store/index'
+import theme from '@/config/theme'
+import { store } from '@/store/index'
 export default function(num) {
     const themeStyle = num >= theme.length ? theme[0] : theme[num]
     const { color } = store.state.layout.setting

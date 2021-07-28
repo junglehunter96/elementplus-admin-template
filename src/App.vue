@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { changeThemeDefaultColor } from '/@/utils/changeThemeColor'
+import { changeThemeDefaultColor } from '@/utils/changeThemeColor'
 
 export default ({
     name: 'App',

@@ -1,7 +1,7 @@
-import router from '/@/router'
-import { store } from '/@/store/index'
+import router from '@/router'
+import { store } from '@/store/index'
 import { configure, start, done } from 'nprogress'
-import { decode, encode } from '/@/utils/tools'
+import { decode, encode } from '@/utils/tools'
 
 configure({ showSpinner: false })
 

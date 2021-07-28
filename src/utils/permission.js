@@ -1,5 +1,5 @@
 
-import router from '/@/router/index'
+import router from '@/router/index'
 export function checkPermission(permission, type) {
     const value = typeof permission === 'string' ? [permission] : permission
     const currentRoute = router.currentRoute.value

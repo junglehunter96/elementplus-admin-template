@@ -1,9 +1,9 @@
-import { login, getRouterList, getUser } from '/@/api/layout/index';
-import router from '/@/router/index';
-import { allowRouter } from '/@/router/index';
-import { generatorDynamicRouter } from '/@/router/asyncRouter';
-import changeTheme from '/@/utils/changeTheme';
-import { setLocal, useLocal, getLocal, decode } from '/@/utils/tools';
+import { login, getRouterList, getUser } from '@/api/layout/index';
+import router from '@/router/index';
+import { allowRouter } from '@/router/index';
+import { generatorDynamicRouter } from '@/router/asyncRouter';
+import changeTheme from '@/utils/changeTheme';
+import { setLocal, useLocal, getLocal, decode } from '@/utils/tools';
 const IMenubarStatus = {
   PCE: 0, // 电脑展开
   PCN: 1, // 电脑合并

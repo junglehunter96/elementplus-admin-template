@@ -26,7 +26,7 @@ export default ({ command, mode }) => {
     return {
         resolve: {
             alias: setAlias([
-                ['/@', 'src'],
+                ['@', 'src'],
                 ['/mock', 'mock'],
                 ['/server', 'server']
             ])

@@ -10,8 +10,8 @@
 </template>
 <script >
 import { ref } from 'vue'
-import { store } from '/@/store/index'
-import changeThemeColor from '/@/utils/changeThemeColor'
+import { store } from '@/store/index'
+import changeThemeColor from '@/utils/changeThemeColor'
 
 export default ({
     name: 'LayoutTheme',

@@ -26,7 +26,7 @@
 
 <script >
 import {  nextTick, ref, watch, onBeforeUpdate, onMounted, reactive } from 'vue'
-import { useStore } from '/@/store/index'
+import { useStore } from '@/store/index'
 import { useRoute, useRouter } from 'vue-router'
 
 // 右键菜单

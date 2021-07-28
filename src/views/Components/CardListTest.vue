@@ -105,10 +105,10 @@
 
 <script >
 import { reactive, ref } from 'vue'
-import CardList from '/@/components/CardList/CardList.vue'
-import CardListItem from '/@/components/CardList/CardListItem.vue'
-import { format } from '/@/utils/tools'
-import { validate, resetFields } from '/@/utils/formExtend'
+import CardList from '@/components/CardList/CardList.vue'
+import CardListItem from '@/components/CardList/CardListItem.vue'
+import { format } from '@/utils/tools'
+import { validate, resetFields } from '@/utils/formExtend'
 
 // 键值对样式，及表单校验
 const keyValue = () => {

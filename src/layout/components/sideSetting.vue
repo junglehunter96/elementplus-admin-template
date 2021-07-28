@@ -40,9 +40,9 @@
 
 <script >
 import { ref,watch } from 'vue'
-import theme from '/@/config/theme'
-import { useStore } from '/@/store/index'
-import LayoutTheme from '/@/layout/components/theme.vue'
+import theme from '@/config/theme'
+import { useStore } from '@/store/index'
+import LayoutTheme from '@/layout/components/theme.vue'
 
 export default  ({
     name: 'LayoutSideSetting',

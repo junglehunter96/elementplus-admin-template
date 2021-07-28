@@ -1,5 +1,5 @@
 import { nextTick } from 'vue'
-import { format, unformat } from '/@/utils/tools'
+import { format, unformat } from '@/utils/tools'
 
 export default (app)=> {
     app.directive('format', {
