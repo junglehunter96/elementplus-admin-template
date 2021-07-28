@@ -11,7 +11,7 @@
             }'
         >
             <div class='layout-sidebar-logo flex h-12 relative flex-center shadow-lg'>
-                {{ layout.menubar.status === 0 || layout.menubar.status === 2 ? 'hsianglee' : (layout.menubar.status === 1 ? 'lee' : '') }}
+                {{ layout.menubar.status === 0 || layout.menubar.status === 2 ? 'ax' : (layout.menubar.status === 1 ? 'le' : '') }}
             </div>
             <div class='layout-sidebar-menubar flex flex-1 overflow-hidden'>
                 <layout-menubar />

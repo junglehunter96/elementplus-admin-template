@@ -22,10 +22,7 @@
             <template #dropdown>
                 <el-dropdown-menu>
                     <el-dropdown-item>
-                        <el-link href='https://github.com/hsiangleev' target='_blank' :underline='false'>个人中心</el-link>
-                    </el-dropdown-item>
-                    <el-dropdown-item>
-                        <el-link href='https://github.com/hsiangleev/element-plus-admin' target='_blank' :underline='false'>项目地址</el-link>
+                        <el-link href='' target='_blank' :underline='false'>个人中心</el-link>
                     </el-dropdown-item>
                     <el-dropdown-item divided @click='logout'>退出登录</el-dropdown-item>
                 </el-dropdown-menu>

@@ -1,5 +1,5 @@
 <template>
-  <exception-page home-route="/" type="401" />
+  <exception-page home-route="/" type="500" />
 </template>
 
 <script>

@@ -2,8 +2,6 @@
 ## 开发
 
 ```bash
-# 克隆项目
-git clone https://github.com/hsiangleev/element-plus-admin.git
 
 # 进入项目目录
 cd element-plus-admin
