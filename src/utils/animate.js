@@ -1,4 +1,4 @@
-import { Ref, nextTick } from 'vue'
+import { nextTick } from 'vue'
 
 export function animate(param) {
     const { timing, draw, duration } = param

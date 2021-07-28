@@ -22,12 +22,6 @@ export const allowRouter = [
                 component: Components['Workplace'],
                 meta: { title: '工作台', icon: 'el-icon-s-tools' }
             }
-            // {
-            //     name: 'Welcome',
-            //     path: '/Dashboard/Welcome',
-            //     component: Components['Welcome'],
-            //     meta: { title: '欢迎页', icon: 'el-icon-s-tools' }
-            // }
         ]
     },
     {

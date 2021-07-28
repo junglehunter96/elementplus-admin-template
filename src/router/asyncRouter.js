@@ -9,7 +9,7 @@ Object.keys(modules).forEach(key => {
     const nameMatch = key.match(/^\.\.\/views\/(.+)\.vue/)
     if(!nameMatch) return
     // 排除_Components文件夹下的文件
-    if(nameMatch[1].includes('_Components')) return
+    if(nameMatch[1].includes('_Components') || nameMatch[1].includes('components')) return
     // 如果页面以Index命名，则使用父文件夹作为name
     const indexMatch = nameMatch[1].match(/(.*)\/Index$/i)
     let name = indexMatch ? indexMatch[1] : nameMatch[1];
@@ -49,6 +49,7 @@ const generatorDynamicRouter = (data) => {
         }
     }
     f(routerList, null)
+    console.log('routerList: ', routerList);
     store.commit('layout/setRoutes', routerList)
 }
 

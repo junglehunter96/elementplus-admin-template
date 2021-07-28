@@ -11,6 +11,7 @@ const defaultRoutePath = '/'
 router.beforeEach(async(to, from) => {
     start()
     const { layout } = store.state
+    
     // 修改页面title
     const reg = new RegExp(/^(.+)(\s\|\s.+)$/)
     const appTitle = import.meta.env.VITE_APP_TITLE

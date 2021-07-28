@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen h-screen bg-gray-800">
+  <div class="w-screen h-screen bg-gray-800 bg-loginpage bg-cover">
     <div class="layout-login" @keyup="enterSubmit">
       <h3 class="text-2xl font-semibold text-gray-100 text-center mb-6">系统登陆</h3>
       <el-form ref="ruleForm" label-position="right" label-width="80px" :model="form" :rules="rules">
@@ -25,9 +25,7 @@
               <span class="w-24 inline-block">账号: test</span> 密码: test
             </p>
           </div>
-          <div>
-            <el-button type="primary">第三方登录</el-button>
-          </div>
+
         </div>
       </el-form>
     </div>
@@ -35,7 +33,7 @@
 </template>
 
 <script>
-import {  reactive, ref } from 'vue';
+import { reactive, ref } from 'vue';
 import { store } from '/@/store/index';
 import { ElNotification } from 'element-plus';
 import { validate } from '/@/utils/formExtend';
@@ -106,11 +104,34 @@ export default {
 </script>
 
 <style lang='postcss' scoped>
+.common-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  background-color: @layout-body-background;
+  background-image: url('https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 110px;
+  background-size: 100%;
+  .content {
+    padding: 32px 0;
+    flex: 1;
+    @media (min-width: 768px) {
+      padding: 112px 0 24px;
+    }
+  }
+}
 .layout-login {
   padding-top: 200px;
   width: 400px;
   margin: 0 auto;
-
+  background-image: url('https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 110px;
+  background-size: 100%;
   :deep(.el-input__inner) {
     border: 1px solid hsla(0, 0%, 100%, 0.1);
     background: rgba(0, 0, 0, 0.1);
