@@ -27,6 +27,7 @@ export const role_route = [
     { roleName: 'admin', id: 10, permission: [] },
     { roleName: 'admin', id: 5, permission: [] },
     { roleName: 'admin', id: 50, permission: ['add', 'update', 'remove'] },
+    { roleName: 'admin', id: 51, permission: ['add', 'update', 'remove'] },
 
     { roleName: 'dev', id: 1, permission: [] },
     { roleName: 'dev', id: 10, permission: [] },
@@ -144,5 +145,13 @@ export const route = [
         path: '/Permission/Directive',
         component: 'Directive',
         meta: { title: '指令管理', icon: 'el-icon-goods' }
+    },
+    {
+        id: 51,
+        parentId: 5,
+        name: 'PermissionEdit',
+        path: '/Permission/PermissionEdit',
+        component: 'PermissionEdit',
+        meta: { title: '权限分配' }
     }
 ]
