@@ -1,6 +1,15 @@
 
 ## 开发
 
+### 项目地址
+[elementplus-admin-template](https://github.com/junglehunter96/elementplus-admin-template) 技术栈 vite + tailwindcss + vue3 全家桶
+提供中型后台管理项目模块，内置了动态路由 权限验证 过度动画和换肤
+
+### 参考项目
+
+[vue-element-admin](https://github.com/PanJiaChen/vue-element-admin) github 万星项目
+[element-plus-admin](https://github.com/hsiangleev/element-plus-admin)  TS + vite + postcss + vue3 + pinia
+
 ```bash
 
 # 进入项目目录
