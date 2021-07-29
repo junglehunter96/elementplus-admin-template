@@ -28,47 +28,47 @@ import List from '@/components/List/index.vue'
 const listRender = () => {
     const list = [
         { 
-            imgUrl: 'https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png',
-            title: '支付宝',
-            subTitle: '斗通关无际县军连用知政以该果思快领c。',
-            tag: '科学搬砖组',
-            time: '9小时前',
+            imgUrl: 'https://sf3-ttcdn-tos.pstatp.com/img/user-avatar/903c336670c629c4f761509ce91fd037~300x300.image',
+            title: '某某云',
+            subTitle: '拉到东北大漠去晒太阳',
+            tag: '铁蛋',
+            time: '20小时前',
             href: 'javascript:;'
         },
         { 
-            imgUrl: 'https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png',
-            title: '支付宝',
-            subTitle: '斗通关无际县军连用知政以该果思快领c。',
-            tag: '科学搬砖组',
-            time: '9小时前'
+            imgUrl: 'https://sf3-ttcdn-tos.pstatp.com/img/user-avatar/903c336670c629c4f761509ce91fd037~300x300.image',
+            title: '某某云',
+            subTitle: '拉到东北大漠去晒太阳',
+            tag: '铁蛋',
+            time: '20小时前'
         },
         { 
-            imgUrl: 'https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png',
-            title: '支付宝',
-            subTitle: '斗通关无际县军连用知政以该果思快领c。',
-            tag: '科学搬砖组',
-            time: '9小时前'
+            imgUrl: 'https://sf3-ttcdn-tos.pstatp.com/img/user-avatar/903c336670c629c4f761509ce91fd037~300x300.image',
+            title: '某某云',
+            subTitle: '拉到东北大漠去晒太阳',
+            tag: '铁蛋',
+            time: '20小时前'
         },
         { 
-            imgUrl: 'https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png',
-            title: '支付宝',
-            subTitle: '斗通关无际县军连用知政以该果思快领c。',
-            tag: '科学搬砖组',
-            time: '9小时前'
+            imgUrl: 'https://sf3-ttcdn-tos.pstatp.com/img/user-avatar/903c336670c629c4f761509ce91fd037~300x300.image',
+            title: '某某云',
+            subTitle: '拉到东北大漠去晒太阳',
+            tag: '铁蛋',
+            time: '20小时前'
         },
         { 
-            imgUrl: 'https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png',
-            title: '支付宝',
-            subTitle: '斗通关无际县军连用知政以该果思快领c。',
-            tag: '科学搬砖组',
-            time: '9小时前'
+            imgUrl: 'https://sf3-ttcdn-tos.pstatp.com/img/user-avatar/903c336670c629c4f761509ce91fd037~300x300.image',
+            title: '某某云',
+            subTitle: '拉到东北大漠去晒太阳',
+            tag: '铁蛋',
+            time: '20小时前'
         },
         { 
-            imgUrl: 'https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png',
-            title: '支付宝',
-            subTitle: '斗通关无际县军连用知政以该果思快领c。',
-            tag: '科学搬砖组',
-            time: '9小时前'
+            imgUrl: 'https://sf3-ttcdn-tos.pstatp.com/img/user-avatar/903c336670c629c4f761509ce91fd037~300x300.image',
+            title: '某某云',
+            subTitle: '拉到东北大漠去晒太阳',
+            tag: '铁蛋',
+            time: '20小时前'
         }
     ]
     const edit = (item) => console.log(item)

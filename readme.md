@@ -6,7 +6,7 @@
 
 技术栈 vite + tailwindcss + vue3 全家桶
 
-提供中型后台管理项目模块，内置了动态路由 权限验证 过度动画和换肤
+提供中型后台管理项目模块，内置了 无级动态路由 权限验证 过度动画和换肤
 
 ### 参考项目
 
@@ -51,3 +51,12 @@ npm run stylelint
 ## vscode扩展
 
 1. 使用johnsoncodehk.volar，并禁用vetur，支持template代码里面的数据类型提示
+
+
+## TODO
+ 
+- 自定义权限集
+- 富文本
+- Export Excel
+- Upload Excel
+- 自定义粘贴板

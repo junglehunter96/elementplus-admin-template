@@ -6,11 +6,11 @@
                 <el-col :xs='24' :md='16'>
                     <div class='flex items-center'>
                         <div class='pr-4 flex items-center'>
-                            <el-avatar class='w-16 h-16' src='https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg' />
+                            <el-avatar class='w-16 h-16' src='https://iconfont.alicdn.com/t/1520995303822.jpg@100h_100w.jpg' />
                         </div>
                         <div>
                             <div class='text-xl'>你好，{{ user.name }} ，祝你开心每一天！</div>
-                            <div class='text-sm text-gray-400 pt-2'>饿了么－某某某某某某－某某某某某－某某某某某－某某某</div>
+                            <div class='text-sm text-gray-400 pt-2'>阿巴阿巴阿巴阿巴－某某某某某</div>
                         </div>
                     </div>
                 </el-col>
@@ -18,17 +18,17 @@
                     <div class='flex items-center flex-row-reverse'>
                         <div class='px-1 text-center'>
                             <div class='text-sm text-gray-400 pb-2'>访问量</div>
-                            <div class='text-xl'>3,344</div>
+                            <div class='text-xl'>4,124</div>
                         </div>
                         <el-divider direction='vertical' class='h-8' />
                         <div class='px-1 text-center'>
                             <div class='text-sm text-gray-400 pb-2'>排名</div>
-                            <div class='text-xl'>1/100</div>
+                            <div class='text-xl'>1/101</div>
                         </div>
                         <el-divider direction='vertical' class='h-8' />
                         <div class='px-1 text-center'>
                             <div class='text-sm text-gray-400 pb-2'>项目数量</div>
-                            <div class='text-xl'>100</div>
+                            <div class='text-xl'>12</div>
                         </div>
                     </div>
                 </el-col>

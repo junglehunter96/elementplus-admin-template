@@ -15,7 +15,7 @@
         <!-- 用户下拉 -->
         <el-dropdown>
             <span class='el-dropdown-link flex flex-center px-2'>
-                <el-avatar :size='30' src='https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png' />
+                <el-avatar :size='30' src='https://sf3-ttcdn-tos.pstatp.com/img/user-avatar/903c336670c629c4f761509ce91fd037~300x300.image' />
                 <span class='ml-2'>{{ userInfo.name }}</span>
                 <i class='el-icon-arrow-down el-icon--right' />
             </span>
