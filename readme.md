@@ -20,10 +20,10 @@
 cd element-plus-admin
 
 # 安装依赖
-npm install
+yarn install
 
 # 启动服务
-npm run dev
+yarn dev
 ```
 
 浏览器访问 http://localhost:3002
@@ -32,20 +32,20 @@ npm run dev
 
 ```bash
 # 发布
-npm run build
+yarn build
 
 # 预览
-npm run preview
+yarn preview
 ```
 
 ## 其它
 
 ```bash
 # eslint代码校验
-npm run eslint
+yarn eslint
 
 # stylelint代码校验
-npm run stylelint
+yarn stylelint
 ```
 
 ## vscode扩展
