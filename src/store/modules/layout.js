@@ -3,7 +3,7 @@ import router from '@/router/index';
 import { allowRouter } from '@/router/index';
 import { generatorDynamicRouter } from '@/router/asyncRouter';
 import changeTheme from '@/utils/changeTheme';
-import { setLocal, useLocal, getLocal, decode } from '@/utils/tools';
+import { getLocal, decode } from '@/utils/tools';
 const IMenubarStatus = {
   PCE: 0, // 电脑展开
   PCN: 1, // 电脑合并
@@ -12,17 +12,6 @@ const IMenubarStatus = {
 };
 
 const setting = getLocal('setting');
-const token = getLocal('token');
-// 前端检查token是否失效
-useLocal('token')
-  .then((d) => {
-      console.log('d: ', d);
-
-    token.ACCESS_TOKEN = d.ACCESS_TOKEN;
-  })
-  .catch(() => mutations.logout(state));
-
-console.log('token.ACCESS_TOKEN: ', token.ACCESS_TOKEN);
 const state = {
   menubar: {
     status: document.body.offsetWidth < 768 ? IMenubarStatus.PHN : IMenubarStatus.PCE,
@@ -39,9 +28,7 @@ const state = {
     tagsList: [],
     cachedViews: [],
   },
-  token: {
-    ACCESS_TOKEN: token.ACCESS_TOKEN || '',
-  },
+
   setting: {
     theme: setting.theme !== undefined ? setting.theme : 0,
     showTags: setting.showTags !== undefined ? setting.showTags : true,
@@ -118,15 +105,11 @@ const mutations = {
     if (state.tags.tagsList.map((v) => v.name).includes(obj.name)) return;
     state.tags.cachedViews.splice(obj.index, 1);
   },
-  login(state, token = '') {
-    state.token.ACCESS_TOKEN = token;
-    setLocal('token', state.token, 1000 * 60 * 60);
+  login() {
     const { query } = router.currentRoute.value;
     router.push(typeof query.from === 'string' ? decode(query.from) : '/');
   },
   logout(state) {
-    state.token.ACCESS_TOKEN = '';
-    localStorage.removeItem('token');
     history.go(0);
   },
   setRoutes(state, data) {
@@ -176,8 +159,7 @@ const mutations = {
 const actions = {
   async login(context, param) {
     const res = await login(param);
-    const token = res.data.Data;
-    context.commit('login', token);
+    context.commit('login');
   },
   async getUser(context) {
     const res = await getUser();

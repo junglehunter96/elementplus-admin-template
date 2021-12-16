@@ -14,7 +14,7 @@ export default {
       path: '/Nav/SecondNav',
       redirect: '/Nav/SecondNav/ThirdNav',
       component: 'SecondNav',
-      meta: { title: '二级导航', icon: 'el-icon-camera', alwaysShow: true },
+      meta: { title: '二级导航', icon: 'el-icon-camera', alwaysShow: true ,permission: ['add', 'update', 'remove'] },
     },
   ],
 };

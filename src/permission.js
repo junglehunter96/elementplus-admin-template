@@ -19,13 +19,10 @@ router.beforeEach(async (to, from) => {
   // 判断当前是否在登陆页面
   if (to.path.toLocaleLowerCase() === loginRoutePath.toLocaleLowerCase()) {
     done();
-    if (layout.token.ACCESS_TOKEN) return typeof to.query.from === 'string' ? decode(to.query.from) : defaultRoutePath;
+     return typeof to.query.from === 'string' ? decode(to.query.from) : defaultRoutePath;
     return;
   }
-  // 判断是否登录
-  if (!layout.token.ACCESS_TOKEN) {
-    return loginRoutePath + (to.fullPath ? `?from=${encode(to.fullPath)}` : '');
-  }
+
   // 判断是否还没添加过路由
   if (layout.menubar.menuList.length === 0) {
     await store.dispatch('layout/GenerateRoutes');

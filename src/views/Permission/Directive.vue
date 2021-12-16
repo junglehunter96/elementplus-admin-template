@@ -48,7 +48,7 @@ export default ({
         const store = useStore()
         const username = ref(store.state.layout.userInfo.name)
         const changeUser = () => {
-            store.commit('layout/login', `token_${username.value}_token`)
+            store.commit('layout/login')
             history.go(0)
         }
 

@@ -88,7 +88,6 @@ export default ({ command, mode }) => {
             postcss: {
                 plugins: [
                     require('postcss-nested'),
-                    // require('postcss-simple-vars'),
                     require('postcss-import'), 
                     require('autoprefixer'),
                     require('tailwindcss'),

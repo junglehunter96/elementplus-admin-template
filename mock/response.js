@@ -1,16 +1,5 @@
 import { user, user_role, role_route, route } from './data/user'
 
-export const setToken = function(name) {
-    return `token_${name}_token`
-}
-
-export const checkToken = function(req) {
-    const token = req.headers['access-token']
-    const match = token.match(/^token_([\w|\W]+?)_token/)
-    const userName = match ? match[1] : ''
-    return userName
-}
-
 export const login = function(name, pwd) {
     return user.findIndex(v => v.name === name && v.pwd === pwd) !== -1
 }

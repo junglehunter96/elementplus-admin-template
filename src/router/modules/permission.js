@@ -13,7 +13,7 @@ export default {
       name: 'Directive',
       path: '/Permission/Directive',
       component: 'Directive',
-      meta: { title: '指令管理', icon: 'el-icon-goods' },
+      meta: { title: '指令管理', icon: 'el-icon-goods',permission: ['add', 'update', 'remove']  },
     },
   ],
 };

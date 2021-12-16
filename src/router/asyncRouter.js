@@ -32,7 +32,7 @@ const asyncRouter = [
         }
     }
 ]
-
+// TODO permissions
 const generatorDynamicRouter = (data) => {
     const routerList = listToTree(data, 0)
     asyncRouter.forEach(v => routerList.push(v))
