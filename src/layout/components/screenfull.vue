@@ -1,5 +1,5 @@
 <template>
-    <div class='hidden-xs-only px-2'>
+    <div class='px-2 hidden-xs-only'>
         <svg-icon v-if='!isFullscreen' class-name='cursor-pointer' icon-class='svg-fullscreen' @click='changeScreenfull' />
         <svg-icon v-else class-name='cursor-pointer' icon-class='svg-exit-fullscreen' @click='changeScreenfull' />
         

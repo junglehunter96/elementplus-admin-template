@@ -1,6 +1,6 @@
 <template>
-    <div class='flex items-center px-4 flex-wrap h-12 leading-12'>
-        <span class='text-2xl cursor-pointer h-12 leading-12' :class='{ "el-icon-s-fold": !menubar.status, "el-icon-s-unfold": menubar.status }' @click='changeCollapsed' />
+    <div class='flex flex-wrap items-center h-12 px-4 leading-12'>
+        <span class='h-12 text-2xl cursor-pointer leading-12' :class='{ "el-icon-s-fold": !menubar.status, "el-icon-s-unfold": menubar.status }' @click='changeCollapsed' />
         <!-- 面包屑导航 -->
         <div class='px-4'>
             <el-breadcrumb separator='/'>
@@ -11,10 +11,10 @@
             </el-breadcrumb>
         </div>
     </div>
-    <div class='flex items-center flex-row-reverse px-4 min-width-32'>
+    <div class='flex flex-row-reverse items-center px-4 min-width-32'>
         <!-- 用户下拉 -->
         <el-dropdown>
-            <span class='el-dropdown-link flex flex-center px-2'>
+            <span class='flex px-2 el-dropdown-link flex-center'>
                 <el-avatar :size='30' src='https://sf3-ttcdn-tos.pstatp.com/img/user-avatar/903c336670c629c4f761509ce91fd037~300x300.image' />
                 <span class='ml-2'>{{ userInfo.name }}</span>
                 <i class='el-icon-arrow-down el-icon--right' />

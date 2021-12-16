@@ -68,5 +68,6 @@ module.exports = {
     'no-submodule-imports': ['off', '/@'],
     'no-implicit-dependencies': ['off', ['/@']],
     '@typescript-eslint/no-explicit-any': 'off', // 类型可以使用any
+    'unexpected-character-in-attribute-name': 'off'
   },
 };

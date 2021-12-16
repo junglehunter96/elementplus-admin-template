@@ -16,12 +16,12 @@ router.beforeEach(async (to, from) => {
   const reg = new RegExp(/^(.+)(\s\|\s.+)$/);
   const appTitle = import.meta.env.VITE_APP_TITLE;
   document.title = !to.meta.title ? appTitle : appTitle.match(reg) ? appTitle.replace(reg, `${to.meta.title}$2`) : `${to.meta.title} | ${appTitle}`;
-  // 判断当前是否在登陆页面
-  if (to.path.toLocaleLowerCase() === loginRoutePath.toLocaleLowerCase()) {
-    done();
-     return typeof to.query.from === 'string' ? decode(to.query.from) : defaultRoutePath;
-    return;
-  }
+  // // 判断当前是否在登陆页面
+  // if (to.path.toLocaleLowerCase() === loginRoutePath.toLocaleLowerCase()) {
+  //   done();
+  //    return typeof to.query.from === 'string' ? decode(to.query.from) : defaultRoutePath;
+  //   return;
+  // }
 
   // 判断是否还没添加过路由
   if (layout.menubar.menuList.length === 0) {

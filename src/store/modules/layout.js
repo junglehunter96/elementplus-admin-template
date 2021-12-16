@@ -3,7 +3,7 @@ import router from '@/router/index';
 import { allowRouter } from '@/router/index';
 import { generatorDynamicRouter } from '@/router/asyncRouter';
 import changeTheme from '@/utils/changeTheme';
-import { getLocal, decode } from '@/utils/tools';
+import { getLocal, setLocal, decode } from '@/utils/tools';
 const IMenubarStatus = {
   PCE: 0, // 电脑展开
   PCN: 1, // 电脑合并
@@ -12,6 +12,8 @@ const IMenubarStatus = {
 };
 
 const setting = getLocal('setting');
+const cashObject = getLocal('cashId');
+console.log('cashObject: ', cashObject);
 const state = {
   menubar: {
     status: document.body.offsetWidth < 768 ? IMenubarStatus.PHN : IMenubarStatus.PCE,
@@ -30,13 +32,14 @@ const state = {
   },
 
   setting: {
-    theme: setting.theme !== undefined ? setting.theme : 0,
+    theme: setting.theme !== undefined ? setting.theme : 2,
     showTags: setting.showTags !== undefined ? setting.showTags : true,
     color: {
       primary: setting.color !== undefined ? setting.color.primary : '#409eff',
     },
     usePinyinSearch: setting.usePinyinSearch !== undefined ? setting.usePinyinSearch : false,
   },
+  cashId: cashObject.cashId || '', //收银台编号
   isLoading: false,
 };
 const mutations = {
@@ -110,7 +113,8 @@ const mutations = {
     router.push(typeof query.from === 'string' ? decode(query.from) : '/');
   },
   logout(state) {
-    history.go(0);
+    // 登录退出接口
+    router.replace('/Login');
   },
   setRoutes(state, data) {
     state.menubar.menuList = data;
@@ -154,6 +158,12 @@ const mutations = {
     if (!name) return;
     const index = state.tags.cachedViews.findIndex((v) => v === name);
     state.tags.cachedViews.splice(index, 1);
+  },
+  refreshCashId(state, id) {
+    if (id) {
+      state.cashId = id;
+      setLocal('cashId', { cashId: id });
+    }
   },
 };
 const actions = {

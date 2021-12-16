@@ -1,7 +1,7 @@
 <template>
     <el-sub-menu v-if='menuList.children && menuList.children.length > 0' :key='menuList.path' :index='menuList.path'>
         <template #title>
-            <i :class='menuList.meta.icon || "el-icon-location"' />
+            <i :class='menuList.meta.icon || ""' />
             <span>{{ menuList.meta.title }}</span>
         </template>
         <el-menu-item-group>
@@ -14,7 +14,7 @@
         :key='menuList.path'
         :index='menuList.path'
     >
-        <i :class='menuList.meta.icon || "el-icon-setting"' />
+        <i :class='menuList.meta.icon || ""' />
         <template #title>
             {{ menuList.meta.title }}
         </template>

@@ -34,42 +34,17 @@
                 </el-col>
             </el-row>
         </el-card>
-
-        <el-row :gutter='15'>
-            <el-col :md='24' :lg='16'>
-                <aList />
-            </el-col>
-
-            <el-col :md='24' :lg='8'>
-                <el-card shadow='hover' class='mb-2'>
-                    <template #header>
-                        <div class='flex items-center justify-between card-header'>
-                            <span>快速开始</span>
-                        </div>
-                    </template>
-                    <div class='flex flex-wrap'>
-                        <div v-for='o in 7' :key='o' class='p-1'>
-                            <el-tag>{{ '操作 ' + o }}</el-tag>
-                        </div>
-                    </div>
-                </el-card>
-
-                <Chart />
-            </el-col>
-        </el-row>
     </div>
 </template>
 
 <script >
 import { useStore } from '@/store/index'
-import Chart from '@/views/Dashboard/Workplace/_Components/Chart.vue'
-import aList from '@/views/Dashboard/Workplace/_Components/List.vue'
+
 
 export default ({
     name: 'Workplace',
     components: {
-        aList,
-        Chart
+
     },
     setup() {
         const store = useStore()
