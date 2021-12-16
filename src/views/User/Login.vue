@@ -1,7 +1,7 @@
 <template>
-  <div class="w-screen h-screen bg-gray-800 bg-loginpage bg-cover">
+  <div class="w-screen h-screen bg-gray-800 bg-cover bg-loginpage">
     <div class="layout-login" @keyup="enterSubmit">
-      <h3 class="text-2xl font-semibold text-gray-100 text-center mb-6">系统登陆</h3>
+      <h3 class="mb-6 text-2xl font-semibold text-center text-gray-100">系统登陆</h3>
       <el-form ref="ruleForm" label-position="right" label-width="80px" :model="form" :rules="rules">
         <el-form-item class="mb-6 -ml-20" prop="name">
           <el-input v-model="form.name" placeholder="请输入用户名" prefix-icon="el-icon-user" />
@@ -15,11 +15,11 @@
 
         <div class="flex justify-between">
           <div class="text-gray-300">
-            <p class="leading-6 text-sm">
-              <span class="w-24 inline-block">账号: admin</span> 密码: admin
+            <p class="text-sm leading-6">
+              <span class="inline-block w-24">账号: admin</span> 密码: admin
             </p>
-            <p class="leading-6 text-sm">
-              <span class="w-24 inline-block">账号: dev</span> 密码: dev
+            <p class="text-sm leading-6">
+              <span class="inline-block w-24">账号: dev</span> 密码: dev
             </p>
           </div>
 
@@ -32,7 +32,6 @@
 <script>
 import { reactive, ref } from 'vue';
 import { store } from '@/store/index';
-import { ElNotification } from 'element-plus';
 import { validate } from '@/utils/formExtend';
 
 const formRender = () => {

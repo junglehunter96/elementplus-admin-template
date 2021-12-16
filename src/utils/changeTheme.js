@@ -23,7 +23,7 @@ export default function(num) {
     .layout-sidebar .el-menu .el-menu {
         background-color: ${themeStyle.sidebarChildrenBg};
     }
-    .layout-sidebar .el-submenu__title {
+    .layout-sidebar .el-sub-menu__title {
         color: ${themeStyle.sidebarColor};
     }
     .layout-sidebar .el-menu-item {
@@ -31,15 +31,15 @@ export default function(num) {
     }
     .layout-sidebar .el-menu-item:focus,
     .layout-sidebar .el-menu-item:hover,
-    .layout-sidebar .el-submenu__title:hover {
+    .layout-sidebar .el-sub-menu__title:hover {
         background-color: transparent;
         color: ${themeStyle.sidebarActiveColor};
     }
     .layout-sidebar .el-menu-item-group__title {
         padding: 0;
     }
-    .layout-sidebar .el-submenu.is-active > .el-submenu__title,
-    .layout-sidebar .el-submenu.is-active > .el-submenu__title > i {
+    .layout-sidebar .el-sub-menu.is-active > .el-sub-menu__title,
+    .layout-sidebar .el-sub-menu.is-active > .el-sub-menu__title > i {
         color: ${themeStyle.sidebarActiveColor};
     }
     .layout-sidebar .el-menu-item.is-active {

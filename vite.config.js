@@ -3,8 +3,10 @@ import vue from '@vitejs/plugin-vue'
 import path from 'path'
 import { viteMockServe } from 'vite-plugin-mock'
 import viteSvgIcons from 'vite-plugin-svg-icons'
-import styleImport from 'vite-plugin-style-import';
-
+// import styleImport from 'vite-plugin-style-import';
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 const setAlias = (alias) => alias.map(v => {return { find: v[0], replacement: path.resolve(__dirname, v[1]) }})
 const proxy = (list) => {
     const obj = {}
@@ -44,28 +46,19 @@ export default ({ command, mode }) => {
                         'element-plus': ['element-plus'],
                         echarts: ['echarts'],
                         pinyin: ['pinyin']
-                    }
+                    },
+                   
                 }
             },
             chunkSizeWarningLimit: 600
         },
         plugins: [
             vue(),
-            styleImport({
-                libs: [
-                  {
-                    libraryName: 'element-plus',
-                    esModule: true,
-                    ensureStyleFile: true,
-                    resolveStyle: (name) => {
-                      name = name.slice(3);
-                      return `element-plus/packages/theme-chalk/src/${name}.scss`;
-                    },
-                    resolveComponent: (name) => {
-                      return `element-plus/lib/${name}`;
-                    },
-                  },
-                ],
+            AutoImport({
+                resolvers: [ElementPlusResolver()],
+              }),
+              Components({
+                resolvers: [ElementPlusResolver()],
               }),
             viteMockServe({
                 mockPath: 'mock',

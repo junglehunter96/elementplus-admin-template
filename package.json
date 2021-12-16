@@ -4,22 +4,22 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vuedx-typecheck . && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "eslint": "npx eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "stylelint": "npx stylelint **/*.{css,vue} --fix"
   },
   "dependencies": {
     "echarts": "^5.0.2",
-    "element-plus": "1.0.2-beta.62",
+    "element-plus": "^1.1.0-beta.7",
     "vite-plugin-style-import": "^1.0.1",
-    "vue": "^3.0.11"
+    "vue": "^3.2.6"
   },
   "license": "MIT",
   "devDependencies": {
     "@babel/preset-env": "^7.12.11",
     "@vitejs/plugin-vue": "^1.1.4",
-    "@vue/compiler-sfc": "^3.0.11",
+    "@vue/compiler-sfc": "^3.2.6",
     "autoprefixer": "^10.1.0",
     "axios": "^0.21.1",
     "babel-jest": "^27.0.6",
@@ -39,7 +39,9 @@
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "^22.0.0",
     "tailwindcss": "^2.0.2",
-    "vite": "^2.2.4",
+    "unplugin-auto-import": "^0.5.3",
+    "unplugin-vue-components": "^0.17.9",
+    "vite": "^2.5.1",
     "vite-plugin-mock": "^2.6.3",
     "vite-plugin-svg-icons": "^1.0.1",
     "vue-router": "^4.0.6",
