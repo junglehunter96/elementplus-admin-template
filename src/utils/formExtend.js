@@ -1,13 +1,13 @@
-import {  unref } from 'vue'
+import { unref } from 'vue';
 
 /**
  * 表单校验
  * @param ref 节点
  * @param isGetError 是否获取错误项
  */
-export async function validate(ref, isGetError = false){
-    const validateFn = unref(ref).validate
-    return new Promise(resolve => validateFn((valid, object) => isGetError ? resolve({ valid, object }) : resolve(valid)))
+export async function validate(ref, isGetError = false) {
+  const validateFn = unref(ref).validate;
+  return new Promise((resolve) => validateFn((valid, object) => (isGetError ? resolve({ valid, object }) : resolve(valid))));
 }
 
 /**
@@ -16,8 +16,8 @@ export async function validate(ref, isGetError = false){
  * @param props 字段属性
  */
 export async function validateField(ref, props) {
-    const validateFieldFn = unref(ref).validateField
-    return new Promise(resolve => validateFieldFn(props, (errorMessage) => resolve(errorMessage)))
+  const validateFieldFn = unref(ref).validateField;
+  return new Promise((resolve) => validateFieldFn(props, (errorMessage) => resolve(errorMessage)));
 }
 
 /**
@@ -25,16 +25,22 @@ export async function validateField(ref, props) {
  * @param ref 节点
  */
 export function resetFields(ref) {
-    const resetFieldsFn = unref(ref).resetFields
-    resetFieldsFn()
+  const resetFieldsFn = unref(ref).resetFields;
+  console.log('resetFieldsFn: ', resetFieldsFn);
+  resetFieldsFn();
 }
-
+// 表单重置
+export function resetForm(refName) {
+  if (this.$refs[refName]) {
+    this.$refs[refName].resetFields();
+  }
+}
 /**
  * 移除表单项的校验结果
  * @param ref 节点
  * @param props 字段属性
  */
 export function clearValidate(ref, props) {
-    const clearValidateFn = unref(ref).clearValidate
-    props ? clearValidateFn(props) : clearValidateFn()
+  const clearValidateFn = unref(ref).clearValidate;
+  props ? clearValidateFn(props) : clearValidateFn();
 }

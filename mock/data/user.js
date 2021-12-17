@@ -139,10 +139,10 @@ export const route = [
   {
     id: 50,
     parentId: 5,
-    name: 'Directive',
-    path: '/Permission/Directive',
-    component: 'Directive',
-    meta: { title: '指令管理' },
+    name: 'MenuItemEdit',
+    path: '/Permission/MenuItemEdit',
+    component: 'MenuItemEdit',
+    meta: { title: '菜单管理' },
   },
   {
     id: 51,
