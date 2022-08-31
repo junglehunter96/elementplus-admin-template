@@ -1,10 +1,5 @@
 
 ## 开发
-### 参考
-项目结构可参考如下项目和对应文档 基于这两项目改造
-[vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
-
-[element-plus-admin](https://github.com/hsiangleev/element-plus-admin)
 
 ```bash
 
